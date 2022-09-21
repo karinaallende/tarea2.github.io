@@ -1,0 +1,1057 @@
+/* inicio de hoja de estilos */
+@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&display=swap');
+
+:root {
+    --titulo: #ffffff;
+    --nav: #000000;
+    --nav-link: #ffffffb0;
+    --hover: #000000;
+    --hover-fondo: #ffffff;
+    --button: #000000;
+    --fondo-: #000000;
+    --fondo-asiento: #121733;
+    --color-asiento: #fe5c17;
+    --color-texto: #747373f3;
+    --titulo-f: #1d00ff;
+    --texto-f: #2866ad;
+    --texto-carro: #454546;
+    --cuadro-text: #eaeaea;
+}
+
+* {
+    color: var(--titulo);
+    font-family: 'Blinker', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Nav */
+header .color {
+    background-color: var(--fondo-);
+}
+
+header .abajo {
+    background-color: var(--nav);
+}
+
+nav .logo {
+    color: var(--titulo);
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+nav .link a {
+    color: var(--nav-link);
+    font-size: 1, 5rem;
+    margin: 0 20px;
+}
+
+nav .link a:hover {
+    color: var(--titulo);
+}
+
+nav .link a:visited {
+    color: var(--titulo);
+}
+
+nav .btn-nav {
+    border: solid #ffffff 1px;
+    border-radius: 30px;
+
+}
+
+/* Nav */
+
+/* home */
+#home {
+    position: relative;
+}
+
+#home .fondo-inicio {
+    background-image: url("../img/luna1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#home .texto-home {
+    justify-items: center;
+    padding: 15% 5%;
+}
+
+#home .texto-home h1 {
+    text-transform: uppercase;
+    font-size: 4.5rem;
+    font-weight: 700;
+}
+
+#home .texto-home p {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 100;
+    line-height: 1, 5px;
+}
+
+#home .btn-home a {
+    text-decoration: none;
+    color: var(--titulo);
+}
+
+#home .btn-home {
+    border: none;
+    outline: none;
+    padding: 10px;
+    background-color: var(--button);
+    border: solid #ffffff 1px;
+    border-radius: 30px;
+}
+
+#home .btn-home:hover {
+    color: var(--hover);
+    background-color: var(--hover-fondo);
+}
+
+#home .btn-bajar {
+    color: var(--nav-link);
+}
+
+#home .texto-bajar {
+    position: absolute;
+    top: 90%;
+}
+
+#home .texto-bajar a {
+    text-decoration: none;
+}
+
+#home::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 25%;
+    background: linear-gradient(to top, #000000, transparent);
+}
+
+/* home */
+
+/* home2 */
+#home2 {
+    position: relative;
+}
+
+#home2 .fondo-2 {
+    background-color: var(--fondo-);
+    padding: 60px;
+}
+
+#home2 .texto-luna2 {
+    position: absolute;
+    top: 62%;
+    left: 25%;
+}
+
+#home2 .texto-luna2 h2 {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+#home2 .texto-luna2 p {
+    padding-left: 204px;
+    font-weight: 300;
+}
+
+#home2 .texto-luna2 p span {
+    font-weight: bold;
+}
+
+#home2 .btn-home2 {
+    padding: 10px;
+    background-color: var(--button);
+    border: solid #ffffff 1px;
+    border-radius: 30px;
+}
+
+#home2 .btn-home2:hover {
+    color: var(--hover);
+    background-color: var(--hover-fondo);
+}
+
+#home2 .btn-home2 a:hover {
+    color: var(--hover);
+}
+
+
+#home2 .btn-home2 {
+    color: var(--nav-link);
+}
+
+#home2 .btn-home2 a {
+    text-decoration: none;
+    color: var(--titulo);
+}
+
+
+/* home2 */
+
+/* asientos */
+#asiento {
+    max-height: 800px;
+    height: 700px;
+    position: relative;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 8%, rgba(23, 30, 65, 1) 27%, rgba(28, 37, 82, 1) 50%, rgba(23, 30, 65, 1) 76%, rgba(0, 0, 0, 1) 93%);
+}
+
+#asiento .asiento-img {
+    padding-left: 10%;
+    padding-top: 7%;
+}
+
+#asiento .espacio img {
+    height: auto;
+    width: 65%;
+    opacity: 75%;
+    position: absolute;
+    left: 40%;
+    top: -6%;
+}
+
+#asiento .espacio .texto-espacio {
+    position: absolute;
+    top: 20%;
+    left: 45%;
+}
+
+#asiento .espacio .texto-espacio h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+#asiento .espacio .texto-espacio h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--color-asiento);
+}
+
+#asiento .espacio .texto-espacio h3 span {
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--color-asiento);
+}
+
+#asiento .espacio .texto-espacio h4 {
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--titulo);
+}
+
+#asiento .espacio .texto-espacio h4 span {
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--titulo);
+    text-decoration: line-through;
+}
+
+#asiento .espacio .texto-espacio p {
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+#asiento a {
+    text-decoration: none;
+    color: var(--titulo);
+}
+
+#asiento .btn-asiento {
+    border: none;
+    outline: none;
+    margin-top: 15px;
+    padding: 10px 100px;
+    background-color: var(--color-asiento);
+    border: solid var(--color-asiento) 1px;
+    border-radius: 10px;
+}
+
+
+#asiento .btn-to-asiento {
+    position: absolute;
+    left: 42%;
+    top: 90%;
+}
+
+#asiento .btn-to-asiento {
+    border: none;
+    outline: none;
+    padding: 10px 50px;
+    background-color: var(--button);
+    border: solid #ffffff 1px;
+    border-radius: 30px;
+}
+
+#asiento .btn-to-asiento:hover {
+    text-decoration: none;
+    background-color: var(--hover-fondo);
+    color: var(--fondo-);
+}
+
+#asiento .btn-to-asiento {
+    color: var(--nav-link);
+}
+
+/* asientos */
+
+/* socios */
+
+#socios {
+    background-color: var(--fondo-);
+}
+
+#socios .fondo-socios {
+    height: 600px;
+    background-image: url("../img/imagen6.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#socios .img-socios {
+    padding-top: 75px;
+}
+
+#socios .img-socios h2 {
+    text-align: center;
+}
+
+#socios .logos-socios {
+    text-align: center;
+}
+
+/* socios */
+
+/* clientes */
+
+#experiencias {
+    background-color: var(--fondo-);
+    margin-bottom: 1px;
+}
+
+#experiencias h2 {
+    padding-top: 20px;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+#experiencias h3 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--color-asiento);
+}
+
+#experiencias p {
+    padding-top: 15px;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: var(--color-texto);
+}
+
+#experiencias .img2 {
+    width: 122%;
+}
+
+/* clientes */
+
+/* footer */
+footer {
+
+    background-image: url(../img/imagen15.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#footer2 {
+
+    background-image: url(../img/imagen113.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+footer .titulo-f {
+    text-transform: uppercase;
+    font-size: 4rem;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--titulo-f);
+}
+
+footer p {
+    color: var(--texto-f);
+}
+
+footer input {
+    padding: 10px 45px;
+    color: var(--button);
+}
+
+footer .btn-f {
+    border: solid 1px var(--texto-f);
+    border-radius: 10px;
+    color: var(--texto-f);
+    padding: 10px 70px;
+}
+
+footer h5 {
+    color: var(--texto-f);
+    text-transform: uppercase;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: var(--texto-f);
+}
+
+footer h3 {
+    color: var(--titulo-f);
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+footer .icono ul svg {
+    color: var(--texto-f);
+    padding: 0 10px;
+    width: 10%;
+}
+
+/* footer */
+
+/* 404 */
+#error {
+    height: 1100px;
+    width: auto;
+    background-image: url(../img/error.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+#error .texto-error {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+}
+
+#error .texto-error h1 {
+    text-transform: uppercase;
+    font-size: 9rem;
+    font-weight: 900;
+    color: var(--titulo-f);
+}
+
+#error .texto-error h3 {
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--titulo-f);
+}
+
+#error .texto-error p {
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--titulo-f);
+}
+
+/* 404 */
+
+/* carrito*/
+#carro {
+    background-color: var(--fondo-);
+}
+
+#carro .portada-carro {
+    padding-top: 8%;
+}
+
+#carro .portada-carro img {
+    height: auto;
+    width: 100%;
+}
+
+#carro .inicio-c p span {
+    color: var(--color-asiento);
+}
+
+#carro .caja-uno {
+    background: var(--titulo);
+    padding-bottom: 20px;
+}
+
+#carro .caja-uno h3 {
+    color: var(--texto-carro);
+    text-transform: uppercase;
+    padding: 30px 5px;
+    font-size: 1.5rem;
+}
+
+#carro table .caja-titulo {
+    background: var(--cuadro-text);
+}
+
+#carro table .caja-titulo th {
+    color: var(--nav);
+}
+
+#carro tbody th {
+    background: var(--titulo);
+    color: var(--nav);
+}
+
+#carro tbody th img {
+    height: 100px;
+}
+
+#carro .btn-carro {
+    text-decoration: none;
+    color: var(--texto-carro);
+    padding: 5px 30px;
+    background-color: var(--cuadro-text);
+}
+
+#carro .btn-carro:hover {
+    color: var(--titulo);
+    background-color: var(--fondo-);
+}
+
+#carro .btn-act {
+    text-decoration: none;
+    color: var(--button);
+}
+
+#carro .caja-dos {
+    background: var(--titulo);
+    padding-bottom: 20px;
+}
+
+#carro .caja-dos h3 {
+    color: var(--texto-carro);
+    padding-top: 20px;
+    font-size: 1.5rem;
+}
+
+#carro .precios p {
+    color: var(--texto-carro);
+}
+
+#carro .precios span {
+    color: var(--fondo-asiento);
+    font-weight: bold;
+}
+
+#carro .btn a {
+    text-decoration: none;
+    color: var(--titulo);
+
+}
+
+#carro .btn {
+    color: var(--titulo);
+    padding: 5px 30px;
+    background-color: var(--texto-f);
+}
+
+#carro .btn:hover {
+    color: var(--titulo);
+    background-color: var(--fondo-);
+}
+
+/* carrito*/
+
+/* formulario */
+#check {
+    padding-top: 10%;
+}
+
+#check .form-factura {
+    padding-left: 5%;
+}
+
+#check .form-factura h2 {
+    color: var(--texto-carro);
+}
+
+#check .form-factura label {
+    color: var(--button);
+    font-weight: 600;
+    padding: 10px 0;
+}
+
+#check .form-factura input {
+    background-color: var(--cuadro-text);
+    border: 0;
+}
+
+#check .form-factura select,
+textarea {
+    background-color: var(--cuadro-text);
+    border: 0;
+}
+
+#check .form-factura textarea {
+    width: 100%;
+}
+
+#check .form-pedido {
+    margin-left: 3%;
+}
+
+#check .form-pedido h2 {
+    color: var(--texto-carro);
+    padding-bottom: 10%;
+}
+
+#check .caja-pedido {
+    -webkit-box-shadow: -6px 9px 12px -2px rgba(0, 0, 0, 0.73);
+    box-shadow: -6px 9px 12px -2px rgba(0, 0, 0, 0.73);
+    padding-bottom: 20%;
+}
+
+#check thead th {
+    color: var(--texto-carro);
+}
+
+#check .form-check label {
+    color: var(--texto-carro);
+    padding-bottom: 5%;
+}
+
+#check .cuadro {
+    padding-left: 10%;
+    text-decoration: none;
+}
+
+#check .cuadro th {
+    background: var(--cuadro-text);
+    color: var(--texto-carro);
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+#check .cuadro th span {
+    background: var(--cuadro-text);
+    color: var(--texto-carro);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#check .t-oscuro {
+    color: var(--texto-carro);
+    font-weight: 600;
+    padding-left: 80px;
+}
+
+#check .t-dos {
+    color: var(--texto-carro);
+    font-weight: 300;
+    padding-left: 80px;
+}
+
+#check .t-dos span {
+    color: var(--texto-carro);
+    font-weight: 700;
+}
+
+#check .btn-compra a {
+    text-decoration: none;
+    color: var(--titulo);
+}
+
+#check .btn-compra {
+    background: var(--titulo-f);
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    padding: 5px 80px;
+    margin-left: 85px;
+    margin-top: 40px;
+}
+
+/* formulario */
+
+/* gracias */
+#thx {
+    height: 1100px;
+    width: auto;
+    background-image: url(../img/gracias.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+#thx .texto-thx {
+    position: absolute;
+    width: 400px;
+    top: 25%;
+    left: 60%;
+    border: solid 2px var(--titulo);
+    padding: 40px 25px;
+}
+
+#thx .texto-thx h1,
+h3 {
+    color: var(--titulo-f);
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 50px;
+}
+
+/* gracias */
+
+/* producto  */
+#asiento {
+    padding-top: 50px
+}
+
+#venta-asiento {
+    background: var(--fondo-);
+}
+
+#venta-asiento .card {
+    width: 353px;
+    background-color: var(--fondo-);
+    border: solid 2px var(--titulo);
+    margin-bottom: 150px;
+}
+
+#venta-asiento h2 {
+    text-align: center;
+    padding: 40px 0;
+    text-transform: uppercase;
+}
+
+#venta-asiento .card-title {
+    padding: 5px 0;
+}
+
+#venta-asiento .card-text {
+    color: var(--color-asiento);
+    font-weight: 300;
+    font-size: 1rem;
+    padding: 3px 0;
+}
+
+#venta-asiento .card-text span {
+    color: var(--color-asiento);
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+#venta-asiento .card-texto2 {
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--texto-carro);
+}
+
+#venta-asiento .card-texto2 span {
+    text-decoration: line-through;
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: var(--texto-carro);
+
+}
+
+#venta-asiento .boton-compra {
+    background-color: var(--color-asiento);
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    padding: 10px 30px;
+}
+
+#venta-asiento .boton-compra a{
+    text-decoration: none;
+    color: var(--cuadro-text);
+}
+
+#venta-asiento .botonasiento{
+    background-color: var(--hover-fondo);
+    color: var(--hover);
+}
+
+/* producto */
+
+/* tienda */
+
+#tienda {
+    background-color: var(--fondo-);
+    padding-top: 10%;
+}
+
+#tienda .ruta p span {
+    color: var(--color-asiento);
+}
+
+#tienda .card {
+    width: 353px;
+    background-color: var(--fondo-);
+    border: solid 2px var(--titulo);
+    margin-bottom: 150px;
+}
+
+#tienda h2 {
+    text-align: center;
+    padding: 40px 0;
+    text-transform: uppercase;
+}
+
+#tienda .card-title {
+    padding: 5px 0;
+}
+
+#tienda .card-text {
+    color: var(--color-asiento);
+    font-weight: 300;
+    font-size: 1rem;
+    padding: 3px 0;
+}
+
+#tienda .card-text span {
+    color: var(--color-asiento);
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+#tienda .card-texto2 {
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--texto-carro);
+}
+
+#tienda .card-texto2 span {
+    text-decoration: line-through;
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: var(--texto-carro);
+
+}
+
+#tienda .boton-compra {
+    background-color: var(--color-asiento);
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    padding: 10px 30px;
+}
+
+/* tienda */
+
+/* seleccion asiento */
+
+#sele-asiento {
+    background-color: var(--fondo-);
+}
+
+#sele-asiento .ruta-cohete {
+    padding-top: 10%;
+}
+
+#sele-asiento .cohete-img {
+    height: 1700px;
+    background-image: url(../img/coete-asientos.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-color: var(--titulo);
+    border-radius: 15px;
+    margin: 0 20px;
+    position: relative;
+}
+
+#sele-asiento .cohete-img img {
+    width: 30px;
+    margin-top: 50%;
+}
+
+#sele-asiento .ruta-cohete span {
+    color: var(--color-asiento);
+    text-transform: uppercase;
+}
+
+#sele-asiento .conte-datos {
+    padding: 70px 40px
+}
+
+
+#sele-asiento .conte-datos p {
+    color: var(--fondo-);
+}
+
+
+#sele-asiento .conte-datos thead th {
+    width: 100%;
+    background-color: var(--fondo-);
+    color: var(--titulo);
+}
+
+#sele-asiento .conte-datos tbody th {
+    background-color: var(--hover-fondo);
+    color: var(--fondo-);
+}
+
+#sele-asiento .detalle-asiento h3 {
+    color: var(--fondo-);
+    font-size: 1rem;
+    padding: 10px;
+}
+
+#sele-asiento .detalle-asiento ul li {
+    color: var(--fondo-);
+    font-size: 1rem;
+    padding: 10px;
+    list-style: none;
+}
+
+#sele-asiento .btn-nave {
+    background-color: var(--color-asiento);
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    padding: 10px 150px;
+    margin: 40px 60px;
+}
+
+#sele-asiento .btn-nave a {
+    text-decoration: none;
+    color: var(--titulo);
+}
+
+#sele-asiento .colora{
+    width: 15px;
+    height: 15px;
+    background-color: var(--color-asiento);
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    margin-right: 5px;
+}
+#sele-asiento .colorb{
+    width: 15px;
+    height: 15px;
+    background-color: #4B0082;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    margin-right: 5px;
+}
+#sele-asiento .colorc{
+    width: 15px;
+    height: 15px;
+    background-color:#9932CC;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    margin-right: 5px;
+}
+#sele-asiento .colord{
+    width: 15px;
+    height: 15px;
+    background-color: #008000;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    margin-right: 5px;
+}
+#sele-asiento .colore{
+    width: 15px;
+    height: 15px;
+    background-color: #FF69B4;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    margin-right: 5px;
+}
+#sele-asiento .colorf{
+    width: 15px;
+    height: 15px;
+    background-color: #808080;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    margin-right: 5px;
+}
+
+#sele-asiento .cohete-asientos{
+    display: inline;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    margin: 0 6px;
+    font-size: 12px;
+    line-height: 17px;
+    border-radius: 3px;
+}
+
+
+#sele-asiento .caja-asientos{
+    margin-top: 0;
+    margin-left: 16%;
+}
+
+#sele-asiento .posicion .clasezero{
+    border: #4B0082 solid 4px;
+}
+
+#sele-asiento .posicion .claseseg{
+    border: var(--color-asiento) solid 4px;
+}
+
+#sele-asiento .posicion .clasepri{
+    border: #008000 solid 4px;
+}
+#sele-asiento .posicion .claseter{
+    border: #FF69B4 solid 4px;
+}
+#sele-asiento .posicion .clasecua{
+    border: #9932CC solid 4px;
+}
+
+#sele-asiento .colazero{
+    background-color: #4B0082;
+}
+
+#sele-asiento .colaseg{
+    background-color: var(--color-asiento);
+}
+
+#sele-asiento .colatres{
+    background-color:#008000;
+}
+
+#sele-asiento .colacua{
+    background-color: #FF69B4;
+}
+
+#sele-asiento .colaqin{
+    background-color: #9932CC;
+}
+/* seleccion asiento */
