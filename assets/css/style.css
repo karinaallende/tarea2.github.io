@@ -27,7 +27,6 @@
 }
 
 body {
-    max-width: 100vw;
     overflow-x: hidden;
 }
 
@@ -102,24 +101,25 @@ nav .btn-nav {
     font-weight: 100;
     line-height: 1, 5px;
 }
-
+#home .btn-home{
+    padding: 10px;
+    background-color: var(--button);
+    border: solid #ffffff 1px;
+    border-radius: 30px;
+    color: var(--nav-link);
+}
 #home .btn-home a {
     text-decoration: none;
     color: var(--titulo);
 }
 
-#home .btn-home {
-    border: none;
-    outline: none;
-    padding: 10px;
-    background-color: var(--button);
-    border: solid #ffffff 1px;
-    border-radius: 30px;
-}
-
 #home .btn-home:hover {
     color: var(--hover);
     background-color: var(--hover-fondo);
+}
+
+#home .btn-home a:hover {
+    color: var(--hover);
 }
 
 #home .btn-bajar {
@@ -158,8 +158,7 @@ nav .btn-nav {
 
 #home2 .texto-luna2 {
     position: absolute;
-    top: 62%;
-    left: 25%;
+    top: 68%;
 }
 
 #home2 .texto-luna2 h2 {
@@ -168,7 +167,6 @@ nav .btn-nav {
 }
 
 #home2 .texto-luna2 p {
-    padding-left: 204px;
     font-weight: 300;
 }
 
@@ -181,6 +179,12 @@ nav .btn-nav {
     background-color: var(--button);
     border: solid #ffffff 1px;
     border-radius: 30px;
+    color: var(--nav-link);
+}
+
+#home2 .btn-home2 a {
+    text-decoration: none;
+    color: var(--titulo);
 }
 
 #home2 .btn-home2:hover {
@@ -190,16 +194,6 @@ nav .btn-nav {
 
 #home2 .btn-home2 a:hover {
     color: var(--hover);
-}
-
-
-#home2 .btn-home2 {
-    color: var(--nav-link);
-}
-
-#home2 .btn-home2 a {
-    text-decoration: none;
-    color: var(--titulo);
 }
 
 
